@@ -10,4 +10,4 @@ Si hmmlearn falla al instalar (necesita compilar C), correr primero:
 
 sudo dnf install gcc gcc-c++ python3-devel -y
 
-y reintentar  el pip install 
+y reintentar  el pip install

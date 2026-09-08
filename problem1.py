@@ -4,9 +4,12 @@ import pandas as pd
 df = pd.read_csv(f"credit_risk_dataset.csv")
 
 
-print(df.shape)
+df_limpio = df.dropna()
 
-print(df.info())
+print("Filas antes:", len(df))
+print("Filas después:", len(df_limpio))
+print("Filas eliminadas:", len(df) - len(df_limpio))
 
-print(df.head())
 
+
+print(df_limpio[['person_age', 'person_emp_length', 'person_income']].describe())
